@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>VueApp</title>
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+		{{msg}}	
+	</div>
+	
+	<div id="app2">
+		{{msg}}	
+	</div>
+	
+	<script>
+		let app = new Vue({
+			el:'#app',
+			data:{
+				msg:'Hello World!'
+			}
+		});
+		
+		let app2 = new Vue({
+			el:'#app2',
+			data:{
+				msg:'Foo bar!'
+			}
+		});
+	</script>
+  </body>
+</html>
